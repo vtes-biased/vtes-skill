@@ -30,6 +30,7 @@ Upstream states at the initial copy (2026-08-25):
 | `references/rules/rules-feedback.md` | pre-repo skill `rules-feedback.md` | owned here |
 | `references/rules/game-terms.json` | pre-repo skill `game_terms.json` | owned here |
 | `references/rules/rulings/{rulings,groups,references}.yaml` | vtes-advanced-rules `vtes-rulings/rulings/*.yaml` (submodule @ `888cd79`, copied 2026-08-25) | none |
+| `scripts/sync_snapshots/{modules,strategist,rulemonger}.md` | sync baselines: the last-reviewed upstream state of the curated/watch entries in `scripts/sync.py`'s manifest — refreshed by `sync.py apply`, initialized from the commits above | n/a (tooling state, not knowledge) |
 
 ## Archived data (not in git)
 

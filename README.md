@@ -20,7 +20,8 @@ vocabulary, owner-calibrated analysis procedures). Live card and TWDA data comes
   history, archetype classification.
 - `scripts/` — fetch and query the bulk data (cards, rulings, TWDA from
   [static.krcg.org](https://static.krcg.org), plus the historical usenet rules-discussion
-  archives hosted as this repo's `usenet-archives` release) into `data/` (gitignored).
+  archives hosted as this repo's `usenet-archives` release) into `data/` (gitignored), and
+  `sync.py` to review and apply upstream changes to the carried knowledge files.
 - `SOURCES.md` — provenance of every carried file. `wiki/` — design decisions. `BOARD.md` —
   pending work.
 

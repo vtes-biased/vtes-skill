@@ -30,9 +30,10 @@ strategy.
 
 ## Standing constraints
 
-- **Harness-neutral knowledge.** Everything under `references/` is plain Markdown/JSON/scripts
-  with no Claude-Code-isms, so the knowledge layer can be reused by other harnesses (a public
-  bot, another agent). `SKILL.md` is the only Claude-Code-specific file.
+- **Harness-neutral knowledge.** Everything under `references/` is plain Markdown/JSON with no
+  Claude-Code-isms, and `scripts/` is stdlib Python, so the knowledge and data layers can be
+  reused by other harnesses (a public bot, another agent). Claude-Code-specific files are
+  `SKILL.md` and this repo's own `.claude/` harness — nothing else.
 - **Self-contained.** No file references into other repos. Network grounding (api.krcg.org,
   static.krcg.org) is first-class and encouraged; cross-repo file paths are forbidden.
 - **Grounding discipline applies to maintenance too.** When editing knowledge files, verify
@@ -43,11 +44,13 @@ strategy.
 
 ## Maintenance loops
 
-- **Sync** (scripted in phase 3, manual until then): fetch the upstream heads, diff the
-  verbatim-carried files against what's embarked, update `SOURCES.md` hashes. A diff on a
-  verbatim file → apply it; a diff that touches synthesized material → treat as ingress, decide.
-  Upstreams: `vtes-biased/vtes-advanced-rules` (+ its `rulebook2024` submodule) and
-  `lionel-panhaleux/codex-of-the-damned`, plus the pre-repo skill files (now owned here).
+- **Sync**: the `/sync` skill (`.claude/skills/sync/`) wraps `scripts/sync.py` — `status`
+  refreshes shallow clones of the upstreams into `data/upstreams/` and diffs every manifest
+  entry; `apply` lands mechanical changes and refreshes the snapshots (`scripts/sync_snapshots/`)
+  behind curated and watch entries. Every diff is adjudicated as ingress before applying; the
+  skill carries the ordering rules (merge/assess first, apply second).
+  Upstreams: `vtes-biased/vtes-advanced-rules` (+ its submodules) and
+  `lionel-panhaleux/codex-of-the-damned`; the pre-repo skill files are owned here, no upstream.
 - **Calibration** (phase 4): graded Q&A sessions with the owner; feedback becomes corpus entries
   only after owner adjudication; a fixed regression set is re-run after skill revisions.
   Community feedback, when it arrives, is *candidate* entries — the owner remains the judge.
