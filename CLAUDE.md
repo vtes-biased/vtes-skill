@@ -20,6 +20,9 @@ strategy.
     synthesis, a curation decision.
 - **`SOURCES.md`** — the provenance map: every verbatim file → upstream path, commit, copied-at
   date, and the dedup/drop decisions. Update it on every sync.
+- **`scripts/`** — the data layer: `fetch_data.py` (KRCG v4 snapshot + usenet archives into
+  gitignored `data/`), `query.py` (card/rulings/deck/search/rates/company against the snapshot).
+  Stdlib-only by design — they must run anywhere.
 - **`wiki/`** — standing knowledge: design decisions and rationale. Read `wiki/design.md` before
   changing the architecture.
 - **`BOARD.md`** — what must change, in priority order. The goal is zero; completion is deletion.

@@ -29,6 +29,15 @@ Upstream states at the initial copy (2026-08-25):
 | `references/rules/code-of-ethics.md` | pre-repo skill `code-of-ethics.md` | owned here |
 | `references/rules/rules-feedback.md` | pre-repo skill `rules-feedback.md` | owned here |
 | `references/rules/game-terms.json` | pre-repo skill `game_terms.json` | owned here |
+| `references/rules/rulings/{rulings,groups,references}.yaml` | vtes-advanced-rules `vtes-rulings/rulings/*.yaml` (submodule @ `888cd79`, copied 2026-08-25) | none |
+
+## Archived data (not in git)
+
+| Data | Provenance | Durable home |
+|---|---|---|
+| `data/usenet/rec.games.trading-cards.jyhad.mbox` (425MB, 1994-2013) | owner's archive (giganews-era usenet backup, obtained 2013) | release asset `usenet-archives` on this repo — **no reliable canonical source remains online**; treat the release as the master copy |
+| `data/usenet/rec.games.deckmaster.mbox` (246MB) | owner's archive (obtained 2026-08) | same release |
+| `data/krcg/{vtes,twda}.json` | `static.krcg.org/data/v4/` (nightly) | regenerable — refetch, never archive |
 
 ## Synthesized files (curated here, never synced)
 
@@ -40,7 +49,7 @@ Upstream states at the initial copy (2026-08-25):
 ## Dropped on dedup / scope (revisit deliberately)
 
 - codex `rules/vtes-rules-full.md` — the 2024 rulebook reformatted; superseded by `rulebook.md`.
-- vtes-advanced-rules `vtes-rulings/rulings/*.yaml` — raw rulings DB; covered by API `rulings`
-  field + `advanced-rules.md` + `rulings-canon.md`.
+- vtes-advanced-rules `rulebook2024/bin/media/*` — the rulebook's illustration images; the skill
+  is text-only, `rulebook.md` carries the full text.
 - codex `.claude/skills/twda/references/archetype-page-style.md` — site house style, not knowledge.
 - rulemonger/strategist agent definitions — custodial roles; their knowledge was extracted.

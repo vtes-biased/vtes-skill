@@ -63,12 +63,19 @@ deck analysis or strategy answer.
 | `references/rules/code-of-ethics.md` | Player conduct, event organization ethics. |
 | `references/rules/rules-feedback.md` | Recent rules changes and clarifications. |
 | `references/rules/judges-guide-legacy.md` | Historical (2004) penalty guidelines only. |
+| `references/rules/rulings/rulings.yaml` | The raw curated rulings database (~2,600 entries, `<id>\|<name>` keys); `references.yaml` resolves ruling labels to source URLs, `groups.yaml` defines card groups rulings apply to. |
+| `data/usenet/*.mbox` | No direct ruling answers the question: 30+ years of rules-director answers and design discussions (rec.games.trading-cards.jyhad 1994-2013, rec.games.deckmaster). Grep with context, e.g. `grep -n -i -B2 -A15 "<card or phrase>" data/usenet/*.mbox`; weigh by author and date — an RTR or a Thomas R Wylie / LSJ / Vincent Ripoll post is authoritative, a player post is not. |
 
-## Data (live grounding)
+## Data (grounding)
 
-- **Cards** (text, rulings, images): `https://api.krcg.org/card/<id-or-name>` · completion
-  `/complete/<partial>` · search `POST /card_search` · docs at `https://v4.api.krcg.org/docs`.
-- **TWDA** (~4,500 tournament-winning decks since 1994): `https://api.krcg.org/twda/<id>`,
-  `POST /twda` for filtered lists.
-- **Bulk snapshots** (aggregate questions — play rates, co-occurrence):
-  `https://static.krcg.org/data/vtes.json` and `.../twda.json`, refreshed nightly.
+Local snapshot first (same v4 format as the API). Fetch/refresh: `python3 scripts/fetch_data.py
+krcg` (staleness report: `... check`; the query tool warns when >30 days old). Then:
+
+- `python3 scripts/query.py card <name-or-id>` — full card object (read ALL fields: requirements
+  live in `clans`/`disciplines`, rulings in `rulings`).
+- `... rulings <name-or-id>` · `... deck <twda-id>` · `... search <text> [--text]`
+- `... rates [--since DATE] [--top N] [--crypt]` — play rates; `... company <name-or-id>
+  [--since DATE]` — co-occurrence. These ground every meta claim.
+
+Fallback when the snapshot is unavailable: `https://api.krcg.org/card/<id-or-name>`,
+`/complete/<partial>`, `POST /card_search`, `/twda/<id>` (docs: `https://v4.api.krcg.org/docs`).

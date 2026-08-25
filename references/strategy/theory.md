@@ -128,16 +128,17 @@ hardest here. Run the analysis procedure first (steps 2-5, 8 on the draft), then
 
 # Data toolbox
 
-- **Card texts/images/rulings**: `https://api.krcg.org/card/<id-or-name>` (JSON: `card_text`,
-  `types`, `clans`, `disciplines`, `capacity`, `group`, `title`, `rulings`). Name completion:
-  `/complete/<partial>`. Structured search: POST `/card_search`. Interactive docs:
-  `https://v4.api.krcg.org/docs`.
-- **TWDA decks**: `https://api.krcg.org/twda/<id>`; `POST /twda` for filtered lists. ~4,500
-  winning decks since 1994.
-- **Bulk data**: `https://static.krcg.org/data/vtes.json` (all cards, rulings included, ~7MB)
-  and `https://static.krcg.org/data/twda.json` (complete TWDA, ~13MB), refreshed nightly,
-  `Last-Modified` header for update checks. A local snapshot + query tooling is planned; until
-  it lands, use the API for point lookups and fetch the bulk files only for aggregate questions
-  (play rates, co-occurrence).
+Paths relative to the skill root. The local snapshot (v4 format, same shapes as the API) is the
+primary source; refresh with `python3 scripts/fetch_data.py krcg` when the query tool warns.
+
+- **Cards** (full object: `card_text`, `types`, `clans`, `disciplines`, `capacity`, `group`,
+  `title`, `rulings`): `python3 scripts/query.py card <name-or-id>`; rulings only:
+  `... rulings <name-or-id>`; name/text search: `... search <text> [--text]`.
+- **TWDA decks**: `python3 scripts/query.py deck <twda-id>` (~4,500 winning decks since 1994).
+- **Play rates / co-occurrence** (behind every meta claim): `python3 scripts/query.py rates
+  --since <date> [--top N] [--crypt]` and `... company <name-or-id> --since <date>`.
+- **API fallback** (no snapshot at hand): `https://api.krcg.org/card/<id-or-name>`,
+  `/complete/<partial>`, POST `/card_search`, `/twda/<id>` — docs `https://v4.api.krcg.org/docs`.
 - **Archetype ground truth**: `classification.json` (this directory). Labels are the owner's;
   the `noise` list is the ~40% matching no archetype.
+- **Historical rules discussions**: `data/usenet/*.mbox` — see the routing table in `SKILL.md`.

@@ -41,6 +41,18 @@ constraints); none of that entered the skill.
    and community feedback only ever produces *candidate* entries; the owner adjudicates.
 4. **`modules.md` is canonized** (owner, 2026-08-25). The DRAFT header is gone; per-entry ⚠
    flags remain as honest uncertainty markers from the mining pass.
+5. **The usenet archives are ours to preserve** (owner, 2026-08-25). rec.games.trading-cards.jyhad
+   (1994-2013) and rec.games.deckmaster hold 30+ years of rules-director answers — the expert
+   rulemonger's fallback when no direct ruling exists — and no reliable canonical copy remains
+   online. GitHub blocks git files >100MB, so the mbox zips live as **release assets**
+   (`usenet-archives` tag) on this repo — clones stay lean, the release is the durable master
+   copy, and `scripts/fetch_data.py usenet` installs them into `data/` (gitignored). The raw
+   rulings database (`vtes-rulings/*.yaml`, 546KB) is embarked in git for the same durability
+   reason, reversing a phase-1 drop.
+6. **Community sources (blogs, articles) are a candidate enrichment layer, not yet embarked.**
+   Less trustable than the stats-, rulemonger- and rules-director-grade sources; if added, they
+   enter as a clearly-labeled lower tier of the authority hierarchy. Board line tracks the
+   exploration.
 
 ## Dedup decisions (phase 1)
 
