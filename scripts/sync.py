@@ -176,6 +176,11 @@ def cmd_apply(args) -> int:
             matches = [e for e in MANIFEST if _entry_name(e) == name]
             if not matches:
                 sys.exit(f"no manifest entry named {name!r}")
+            for entry in matches:
+                # refuse IN-SYNC entries: applying one re-baselines a snapshot from
+                # whatever the cache holds, with nothing to adjudicate — a silent hazard
+                if entry not in changed:
+                    sys.exit(f"{name} is IN-SYNC — nothing to apply (run `status` first)")
             targets.extend(matches)
     else:
         targets = [e for e in changed if e[3] == "copy"]

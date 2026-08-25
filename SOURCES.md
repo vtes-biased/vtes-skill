@@ -5,10 +5,14 @@ Upstream commits recorded at copy time; "pre-repo skill" = the unversioned
 `~/.claude/skills/vtes` directory this repo replaced (those files are now owned here — no
 upstream to sync from).
 
-Upstream states at the initial copy (2026-08-25):
+## Sync history
 
-- `vtes-advanced-rules` @ `5c93271` (submodules: `rulebook2024` @ `0644d3d`, `vtes-rulings` @ `888cd79`)
-- `codex-of-the-damned` @ `708386d`
+Latest applied sync first; append a dated line per applied sync (`/sync` skill, step 5), with
+the upstream heads `scripts/sync.py status` prints and a phrase on what changed.
+
+- 2026-08-25 — initial copy: `vtes-biased/vtes-advanced-rules` @ `5c93271` (submodules:
+  `rulebook2024` @ `0644d3d`, `vtes-rulings` @ `888cd79`),
+  `lionel-panhaleux/codex-of-the-damned` @ `708386d`.
 
 ## Verbatim-carried files
 
