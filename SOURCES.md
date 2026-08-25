@@ -50,6 +50,7 @@ the upstream heads `scripts/sync.py status` prints and a phrase on what changed.
 |---|---|
 | `SKILL.md` | pre-repo skill `SKILL.md` (frame), strategist + rulemonger golden rules (generalized) |
 | `references/strategy/theory.md` | codex-of-the-damned `.claude/agents/strategist.md` — theory, golden rules, procedures, data toolbox; custodial machinery (site style, read-only rules, repo paths) dropped; procedures re-grounded on the public KRCG API |
+| `calibration/LESSONS.md` | distilled from `calibration/corpus/` (this repo's owner-graded sessions); extends the carried `calibration-lessons.md`, which stays frozen — new lessons never land there |
 
 ## Dropped on dedup / scope (revisit deliberately)
 

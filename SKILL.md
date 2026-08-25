@@ -50,6 +50,7 @@ deck analysis or strategy answer.
 | `references/strategy/theory.md` | ALWAYS before deck analysis, card evaluation, or strategy answers. Frame + procedures + data toolbox. |
 | `references/strategy/modules.md` | Deck analysis: the module vocabulary — read decks as compositions of these. |
 | `references/strategy/calibration-lessons.md` | Deck analysis and brew advice: owner-graded heuristics and worked cases — the quality bar. |
+| `calibration/LESSONS.md` | With the above, always: lessons from this skill's own graded sessions — extends the frozen codex baseline, fills as sessions accrue. |
 | `references/strategy/meta-by-year.md` | Any deck or meta question: top archetypes per year since 2021. |
 | `references/strategy/card-changes-history.md` | Deck older than ~1 year, or any card with errata history. |
 | `references/strategy/classification.json` | Archetype ground truth: 120 owner-curated groups, 1,000+ labeled TWDA decks. |

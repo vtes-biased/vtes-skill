@@ -78,5 +78,7 @@ rulemonger; encoded in `SKILL.md` operating rules.
 ## Phases
 
 1. ✅ Repo skeleton, dedup, synthesized SKILL.md + theory.md, harness (2026-08-25).
-2. Data layer: snapshot fetch + query CLI. 3. Sync script + install. 4. Calibration harness.
+2. ✅ Data layer: snapshot fetch + query CLI (2026-08-25). 3. ✅ Sync script + install
+(2026-08-25). 4. Calibration: harness landed 2026-08-25 (`calibration/` format + `/calibrate`
+skill); the corpus and regression set fill through graded sessions with the owner.
 Live lines: `BOARD.md`.

@@ -26,7 +26,9 @@ strategy.
 - **`wiki/`** — standing knowledge: design decisions and rationale. Read `wiki/design.md` before
   changing the architecture.
 - **`BOARD.md`** — what must change, in priority order. The goal is zero; completion is deletion.
-- **`calibration/`** (once phase 4 lands) — the owner-graded corpus and regression set.
+- **`calibration/`** — the owner-graded corpus (`corpus/`, format in its README), the distilled
+  `LESSONS.md` (synthesized here; the carried codex `calibration-lessons.md` stays frozen), and
+  the regression set (`regression: yes` entries). Filled by the `/calibrate` skill.
 
 ## Standing constraints
 
@@ -51,9 +53,12 @@ strategy.
   skill carries the ordering rules (merge/assess first, apply second).
   Upstreams: `vtes-biased/vtes-advanced-rules` (+ its submodules) and
   `lionel-panhaleux/codex-of-the-damned`; the pre-repo skill files are owned here, no upstream.
-- **Calibration** (phase 4): graded Q&A sessions with the owner; feedback becomes corpus entries
-  only after owner adjudication; a fixed regression set is re-run after skill revisions.
-  Community feedback, when it arrives, is *candidate* entries — the owner remains the judge.
+- **Calibration**: the `/calibrate` skill (`.claude/skills/calibrate/`) runs graded sessions
+  with the owner — answers recorded verbatim in `calibration/corpus/` with the grade and
+  correction, generalizable corrections distilled into `calibration/LESSONS.md` — and regression
+  re-runs after skill revisions (fresh, uncontaminated answers to every `regression: yes`
+  question, drift reported for owner adjudication). Community feedback, when it arrives, is
+  *candidate* entries — the owner remains the judge.
 
 ## Commits
 
