@@ -37,8 +37,9 @@ strategy.
   static.krcg.org) is first-class and encouraged; cross-repo file paths are forbidden.
 - **Grounding discipline applies to maintenance too.** When editing knowledge files, verify
   claims against the rulebook/rulings/API — never from memory.
-- **Bulk data is not committed.** Snapshots fetched from static.krcg.org live in `data/`
-  (gitignored); scripts and freshness stamps are committed, the data is not.
+- **Bulk data is not committed.** Everything under `data/` is gitignored — the KRCG snapshots
+  (regenerable from static.krcg.org), their freshness stamp, and the usenet archives (durably
+  hosted as the `usenet-archives` release on this repo). Only the scripts are committed.
 
 ## Maintenance loops
 
