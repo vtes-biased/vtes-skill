@@ -35,6 +35,7 @@ the upstream heads `scripts/sync.py status` prints and a phrase on what changed.
 | `references/rules/game-terms.json` | pre-repo skill `game_terms.json` | owned here |
 | `references/rules/rulings/{rulings,groups,references}.yaml` | vtes-advanced-rules `vtes-rulings/rulings/*.yaml` (submodule @ `888cd79`, copied 2026-08-25) | none |
 | `scripts/sync_snapshots/{modules,strategist,rulemonger}.md` | sync baselines: the last-reviewed upstream state of the curated/watch entries in `scripts/sync.py`'s manifest — refreshed by `sync.py apply`, initialized from the commits above | n/a (tooling state, not knowledge) |
+| `references/community/kgs-cards.md` | KGS Cards blog (blog.kgs-cards.com): "Judge's Notebook: Action Fizzling" + the 6-post Crypt Construction series, fetched 2026-08-26 via the Blogger feed — **carried with the author's permission, granted to the owner 2026-08-26**. Not a git upstream: outside `/sync`; re-fetch deliberately if the posts change (blog dormant since 2025-06) | HTML→Markdown (pandoc); card-illustration images dropped, data-bearing chart images kept as figure links; in-post headings demoted one level; provenance header added |
 
 ## Archived data (not in git)
 
@@ -51,6 +52,7 @@ the upstream heads `scripts/sync.py status` prints and a phrase on what changed.
 | `SKILL.md` | pre-repo skill `SKILL.md` (frame), strategist + rulemonger golden rules (generalized) |
 | `references/strategy/theory.md` | codex-of-the-damned `.claude/agents/strategist.md` — theory, golden rules, procedures, data toolbox; custodial machinery (site style, read-only rules, repo paths) dropped; procedures re-grounded on the public KRCG API |
 | `calibration/LESSONS.md` | distilled from `calibration/corpus/` (this repo's owner-graded sessions); extends the carried `calibration-lessons.md`, which stays frozen — new lessons never land there |
+| `references/community/sources.md` | annotated locator index of community blogs (evaluation pass 2026-08-26, 10 blogs assessed, 6 indexed) — links + our own descriptions, content fetched over the network at need; statuses updated on touch |
 
 ## Dropped on dedup / scope (revisit deliberately)
 

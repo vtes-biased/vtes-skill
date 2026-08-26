@@ -25,7 +25,10 @@ skill's directory (`~/.claude/skills/vtes/`).
 2. **Authority hierarchy for rules questions.** (1) `references/rules/rulebook.md` (verbatim 2024
    rulebook); (2) rulings — the card's `rulings` field via the API, `references/rules/rulings-canon.md`
    for verbatim originals of the most-cited ones; (3) card text; (4) the digests and guides —
-   **locators only**: use them to find which rule governs, never to settle a dispute.
+   **locators only**: use them to find which rule governs, never to settle a dispute;
+   (5) community commentary (`references/community/`) — never authority: a ruling id cited
+   there is a locator to verify against (1)-(3); cite strategy takes with author and date,
+   never as the skill's own calibrated view.
 3. **Date every deck and meta claim.** Decklists are meta answers: read them against their year
    (`references/strategy/meta-by-year.md`, `card-changes-history.md`). Meta claims need TWDA
    numbers, or say they're impressions.
@@ -64,6 +67,8 @@ deck analysis or strategy answer.
 | `references/rules/code-of-ethics.md` | Player conduct, event organization ethics. |
 | `references/rules/rules-feedback.md` | Recent rules changes and clarifications. |
 | `references/rules/judges-guide-legacy.md` | Historical (2004) penalty guidelines only. |
+| `references/community/sources.md` | A second community opinion would help (meta color, archetype takes, play-level essays, designer intent): the annotated blog index — what each source is good for, fetch recipes. Tier (5): never rules authority. |
+| `references/community/kgs-cards.md` | Crypt construction (draw odds, star/anarch builds, crypt-library support) or the "fizzle" taxonomy: carried KGS Cards posts (with permission). Same tier-(5) caveat. |
 | `references/rules/rulings/rulings.yaml` | The raw curated rulings database (~2,600 entries, `<id>\|<name>` keys); `references.yaml` resolves ruling labels to source URLs, `groups.yaml` defines card groups rulings apply to. |
 | `data/usenet/*.mbox` | No direct ruling answers the question: 30+ years of rules-director answers and design discussions (rec.games.trading-cards.jyhad 1994-2013, rec.games.deckmaster). Grep with context, e.g. `grep -n -i -B2 -A15 "<card or phrase>" data/usenet/*.mbox`; weigh by author and date — an RTR or a Thomas R Wylie / LSJ / Vincent Ripoll post is authoritative, a player post is not. |
 

@@ -49,10 +49,16 @@ constraints); none of that entered the skill.
    copy, and `scripts/fetch_data.py usenet` installs them into `data/` (gitignored). The raw
    rulings database (`vtes-rulings/*.yaml`, 546KB) is embarked in git for the same durability
    reason, reversing a phase-1 drop.
-6. **Community sources (blogs, articles) are a candidate enrichment layer, not yet embarked.**
-   Less trustable than the stats-, rulemonger- and rules-director-grade sources; if added, they
-   enter as a clearly-labeled lower tier of the authority hierarchy. Board line tracks the
-   exploration.
+6. **Community sources (blogs, articles) are a clearly-labeled lower tier** — decided
+   2026-08-26 after a 10-blog evaluation pass. Embarked as `references/community/`: an
+   annotated locator index (`sources.md`, 6 sources in, 4 dropped with reasons recorded
+   there) whose content is fetched over the network at need — none of the blogs grants a
+   reuse license, so verbatim carry is off the table except by author permission. The one
+   permission granted (KGS Cards, 2026-08-26) put its judge-grade corpus in `kgs-cards.md`.
+   Tier (5) of the authority hierarchy: never rules authority (cited ruling ids are locators
+   to verify against canon); strategy takes cited with author and date. Not git upstreams:
+   outside `/sync`, statuses updated on touch, archive.org captures recorded as rot
+   insurance.
 
 ## Dedup decisions (phase 1)
 
