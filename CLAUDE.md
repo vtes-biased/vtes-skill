@@ -10,8 +10,9 @@ strategy.
 
 - **`SKILL.md`** — the always-loaded router and operating frame. Keep it lean: golden rules,
   condensed frame, routing table, data endpoints. Anything longer belongs in `references/`.
-- **`references/rules/`** and **`references/strategy/`** — the knowledge. Two kinds of file live
-  here, and the distinction governs every edit:
+- **`references/rules/`**, **`references/strategy/`** and **`references/community/`** (the
+  lower community tier — see `wiki/design.md` decision 6) — the knowledge. Two kinds of file
+  live here, and the distinction governs every edit:
   - **Verbatim-carried** (most files): copied from an upstream repo, mapped in `SOURCES.md`.
     **Never hand-edit these** — fix the upstream and resync, or you fork silently. The one
     sanctioned local delta is recorded per-file in `SOURCES.md`.

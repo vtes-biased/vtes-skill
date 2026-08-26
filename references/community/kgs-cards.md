@@ -389,7 +389,7 @@ This is a capstone of our series on crypt construction.  We'll talk about how t
 
 ### Crypt Construction Blog Entries
 
-In [Understanding Basic Crypt Construction](https://blog.kgs-cards.com/2020/08/understanding-basic-crypt-construction.html), we cover simple crypt types,  This is the basic foundation for understanding how to build crypts.  [Advanced Crypt Construction (and Math!)](https://blog.kgs-cards.com/2021/02/advanced-crypt-construction-and-math.html) delves into decks that have star vampires.  We discuss why keeping the crypt size small is more beneficial and why most crypts should use 12 or 13 vampires.\
+In [Understanding Basic Crypt Construction](https://blog.kgs-cards.com/2020/08/understanding-basic-crypt-construction.html), we cover simple crypt types,  This is the basic foundation for understanding how to build crypts.  [Advanced Crypt Construction (and Math!)](https://blog.kgs-cards.com/2021/02/advanced-crypt-construction-and-math.html) delves into decks that have star vampires.  We discuss why keeping the crypt size small is more beneficial and why most crypts should use 12 or 13 vampires.
 
 Even knowing the best ways to build crypts is no guarantee of success.  We cover ways to use crypt cards to help us get to the vampires we want in [Crypt Construction: Improving the Draw](https://blog.kgs-cards.com/2021/06/crypt-construction-improving-draw.html).  We also discuss our library options in [Crypt Construction: Help from the Library](https://blog.kgs-cards.com/2021/06/crypt-construction-help-from-library.html).
 
