@@ -13,6 +13,7 @@ One file per graded exchange:
 date: 2026-08-25
 mode: rules | analysis | advice
 skill-commit: <short hash of this repo when the answer was produced>
+model: <optional — only when the answer was produced by a non-default model (e.g. opus)>
 status: graded | candidate
 regression: yes | no
 ---
