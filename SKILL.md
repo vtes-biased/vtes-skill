@@ -57,7 +57,7 @@ deck analysis or strategy answer.
 | `references/strategy/meta-by-year.md` | Any deck or meta question: top archetypes per year since 2021. |
 | `references/strategy/card-changes-history.md` | Deck older than ~1 year, or any card with errata history. |
 | `references/strategy/classification.json` | Archetype ground truth: 120 owner-curated groups, 1,000+ labeled TWDA decks. |
-| `references/rules/rules-digest.md` | Quick rules checks: turn structure, combat steps, votes, titles. |
+| `references/rules/rules-digest.md` | Quick rules checks: turn structure, combat steps, votes, titles; its glossary has the 2025 terms the rulebook lacks (stun, queue a combat). |
 | `references/rules/rulebook.md` | The verbatim 2024 rulebook — the authority for base rules. |
 | `references/rules/advanced-rules.md` | Subtle interactions and edge cases: ~2,600 rulings synthesized into principles (timing, costs, cancellation, replacement, contests…). Finely sectioned — grep the headers. |
 | `references/rules/rulings-canon.md` | Verbatim, provenanced text of the most-cited rulings — the settle layer when exact ruling wording matters. |

@@ -1,4 +1,4 @@
-{"_meta":{"description":"VTES game terms — official translations (5th Edition)","sources":{"EN":"rulebook v1.1 (Oct 2023)","FR":"rulebook v1.0 (Jul 2020)","ES":"rulebook v1.1","PT-BR":"rulebook (Brazilian Portuguese)","IT":"rulebook","JP":"rulebook","LATIN":"rulebook v1.0"}},
+{"_meta":{"description":"VTES game terms — official translations (5th Edition)","sources":{"EN":"rulebook v1.1 (Oct 2023)","FR":"rulebook v1.0 (Jul 2020)","ES":"rulebook v1.1","PT-BR":"rulebook (Brazilian Portuguese)","IT":"rulebook","JP":"rulebook","LATIN":"rulebook v1.0"},"untranslated":"null = no official translation yet (Stun and Queue a Combat: English-only terms, Black Chantry 2025-06-12; definitions in rules-digest.md)"},
 "entities":{
 "Methuselah":{"FR":"Mathusalem","ES":"Matusalén","PT-BR":"Matusalém","IT":"Matusalemme","JP":"メトセラ","LATIN":"Mathusala"},
 "Vampire":{"FR":"Vampire","ES":"Vampiro","PT-BR":"Vampiro","IT":"Vampiro","JP":"吸血鬼","LATIN":"Vampyrus"},
@@ -89,10 +89,12 @@
 "Strength":{"FR":"Force","ES":"Fuerza","PT-BR":"Força","IT":"Forza","JP":"ストレングス","LATIN":"Vīs"},
 "Close Range":{"FR":"Au contact","ES":"Cerca","PT-BR":"Curta Distância","IT":"Distanza Ravvicinata","JP":"近距離","LATIN":"Comminus"},
 "Long Range":{"FR":"À distance","ES":"Lejos","PT-BR":"Longa Distância","IT":"Lunga Distanza","JP":"遠距離","LATIN":"Ēminus"},
+"Queue a Combat":{"FR":null,"ES":null,"PT-BR":null,"IT":null,"JP":null,"LATIN":null},
 "Round":{"FR":"Round","ES":"Asalto","PT-BR":"Rodada","IT":"Round","JP":"ラウンド","LATIN":"Impetus"}},
 "states":{
 "Lock":{"FR":"Incliner","ES":"Girar","PT-BR":"Travar","IT":"Impegnare","JP":"ロック","LATIN":"Vertere"},
 "Unlock":{"FR":"Redresser","ES":"Enderezar","PT-BR":"Destravar","IT":"Disimpegnare","JP":"アンロック","LATIN":"Ērigere"},
+"Stun":{"FR":null,"ES":null,"PT-BR":null,"IT":null,"JP":null,"LATIN":null},
 "Ready":{"FR":"Disponible","ES":"Preparado","PT-BR":"Pronto","IT":"Attivo","JP":"準備状態","LATIN":"Parātus"},
 "Wounded":{"FR":"Agonisant","ES":"Herido","PT-BR":"Ferido","IT":"Ferito","JP":"負傷","LATIN":"Saucius"},
 "Torpor":{"FR":"Torpeur","ES":"Letargo","PT-BR":"Torpor","IT":"Torpore","JP":"休眠","LATIN":"Lēthargus"},

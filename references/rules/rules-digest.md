@@ -438,6 +438,7 @@ Titles: kholo (2 votes, unique per clan, clan-only), magaji (2 votes, not unique
 **Predator:** Methuselah to your right.
 **Press:** Continue or end combat.
 **Prey:** Methuselah to your left. Ousting prey = 1 VP + 6 pool.
+**Queue a Combat:** (2025 term) Set up a future combat during an action's resolution. Queued during a combat: starts when that combat ends. Queued earlier: starts after the action resolves, still within resolution (blocked: after the block's combat; successful: after the action's effects). One queued combat at a time; none after resolution.
 **Reaction Card:** Played by ready unlocked minion in response to another Methuselah's minion's action.
 **Ready Minion:** In ready region; can act and block.
 **Referendum:** Political action resolution: terms, votes, effects.
@@ -448,6 +449,7 @@ Titles: kholo (2 votes, unique per clan, clan-only), magaji (2 votes, not unique
 **Stealth:** Exceeds intercept = block fails. Playable only when needed.
 **Strength:** Hand strike damage (default 1 for vampires).
 **Strike:** Combat effort to harm opponent or avoid harm.
+**Stun:** (2025 term) Lock a minion and put a stun counter on it. With 1+ stun counters, it does not unlock as normal at its controller's unlock phase; during that phase, burn the stun counters it had at the start of the turn.
 **Target:** Card/Methuselah affected by effect. Must be in play. Torpor vampires eligible. Uncontrolled/contested not eligible.
 **Thaumaturgy:** Blood Sorcery.
 **Title:** Title card is placeholder. Yielded/lost = card burned. Unique title contests paid with blood.
