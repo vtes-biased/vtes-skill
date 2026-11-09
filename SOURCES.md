@@ -10,6 +10,10 @@ upstream to sync from).
 Latest applied sync first; append a dated line per applied sync (`/sync` skill, step 5), with
 the upstream heads `scripts/sync.py status` prints and a phrase on what changed.
 
+- 2026-11-09 — `vtes-biased/vtes-advanced-rules` @ `945532b` (submodules unchanged:
+  `rulebook2024` @ `0644d3d`, `vtes-rulings` @ `888cd79`), `codex-of-the-damned` @ `18be59e`
+  (carried files unchanged): advanced-rules.md and rulings-canon.md gain the 2025-06-12 terms
+  Stun and Queue a combat (`RTR 20250612`) and Ankha's queued-combats FAQ (`ANK 20250613` on).
 - 2026-08-25 — initial copy: `vtes-biased/vtes-advanced-rules` @ `5c93271` (submodules:
   `rulebook2024` @ `0644d3d`, `vtes-rulings` @ `888cd79`),
   `lionel-panhaleux/codex-of-the-damned` @ `708386d`.

@@ -82,6 +82,8 @@ record supersession in the Status line; do not delete entries.
 - [ANK 20220705] — Locking restricts only playing reaction cards and attempting to block; a minion's card-text ability remains usable while locked
 - [ANK 20221102] — Minion cards are played by both the Methuselah and the minion, so Methuselah-scoped cost reducers reach them; lock-to-act costs lock at announcement
 - [ANK 20240706] — Make every possible choice when announcing an action; a choice depending on the action's outcome is made at resolution instead
+- [RTR 20250612] — New terms "Stun" (lock + stun counter; no normal unlock while countered) and "Queue a combat" (when queued combats start; one at a time; none after resolution); {Mind Numb} now stuns
+- [ANK 20250613] — Queued-combats FAQ and flow chart: after-block-resolution cards wait for every queued combat; all combat starters share one queue; continuation only from the final combat; type-2 starters ({Hidden Lurker}, {Fast Reaction}) loop back from the after-combat windows
 
 ## Entries
 
@@ -1130,3 +1132,45 @@ record supersession in the Status line; do not delete entries.
 >
 > Q: There's also that Platinum Protocol question hanging. The line is mandatory and should have a valid target on announcement if you follow the Break the Bonds ruling here.
 > A: The recipient cannot be chosen as long as the final target of the bleed is not known.
+
+### [RTR 20250612] — New terms "Stun" and "Queue a combat"; {Mind Numb} erratum.
+**Filed under:** not in the pinned or upstream-HEAD database (2026-11-09); the document keys {Hedonism}, {Psyche!}, {Hidden Lurker}, {Mind Numb}
+**Source text:** original verbatim ([Black Chantry](https://www.blackchantry.com/2025/06/12/new-sabbat-rules-terms-and-errata/), fetched 2026-11-09). ID dated by publication: the post bears no other date ("Effective immediately for pre-release tournament play").
+**Status:** current
+
+> NEW TERMS
+> Stun: lock a minion and put a stun counter on them. A minion with one or more stun counters does not unlock as normal at the beginning of their controller's unlock phase; during that unlock phase, burn all stun counters they had at the beginning of the turn.
+> Queue a combat: set up a future combat during the resolution of an action.
+> – If a combat is queued during another combat, the queued combat will start after the current combat ends.
+> – If a combat is queued before action resolution, the queued combat will start after resolving the action, but still as part of the action resolution:
+> — if the action is blocked, the queued combat will start after the block resolution, that is after the combat resulting from the block ends (if any)
+> — if the action is successful, the queued combat will start after the effects of the action have taken place.
+> Combats always occur during the action resolution. It is not possible to queue a combat after the action resolution, and it is not possible to queue more than one combat.
+>
+> ERRATA […] Mind Numb: Now stuns the minion (see NEW TERMS).
+
+### [ANK 20250613] — Queued-combats FAQ and flow chart: after-block-resolution cards wait for every queued combat; all combat starters share one queue; continuation only from the final combat.
+**Filed under:** not in the pinned or upstream-HEAD database (2026-11-09); the document keys {Cats' Guidance}, {Hedonism}, {Psyche!}, {Hidden Lurker}, {Telepathic Tracking}, {Form of Mist}
+**Source text:** original verbatim ([VEKN forum](https://www.vekn.net/forum/rules-questions/82396-queued-combats#114683), fetched 2026-11-09). Post last edited 16 Feb 2026 ("updated flow chart"); the Form of Mist answers were split after Kraus's quote of the first version — the RD's correction is [ANK 20250613-2] (#114687: "Sorry, the example is a bad one. Replace Hedonism with Psyche!").
+**Status:** current. Same thread: [ANK 20250614] #114696 (Siren's Lure card text over the FAQ: "The latter."); [ANK 20250710] #114910; [ANK 20250716] #114968; [ANK 20251103] #115705 (slave rule usable with a Hedonism combat queued: "Yes.", linking LSJ's 27 Jan 2004 "Slave rule and Siren's Lure" answer).
+
+> Q: If a combat is "queued" by Hedonism and the action is blocked, when is it possible to play Cats' Guidance (or Truth in Darkness)?
+> A: The queued combat occurs right after the combat induced by the block. Cats' Guidance can be played once all combats are over.
+> Q: Let's assume there is no combat queued. The combat induced by a block ends, and Psyche! is played to start a new combat, can I play Cats' Guidance before the new combat?
+> A: No. The combat started by Psyche! uses the same queue of combats. So, you will have to wait for all the combats to be over.
+> Q: Can I play Psyche! if there is a pending combat due to Hedonism?
+> A: No, since there is already a combat queued. You could play Telepathic Tracking or Hunting the Quarry to extend the combat though.
+> Q: Can I play Hidden Lurker if there is a pending combat due to Hedonism?
+> A: No, for the same reason. And you cannot play it after the Hedonism combat neither because the requirements are not met (the Hedonism combat does not involve the blocking minion).
+> Q: If I play Form of Mist at superior, can I burn a blood to continue the action if there is a pending combat due to Hedonism?
+> A: No, actions cannot be continued while there is a pending combat.
+> Q: Let's say there is no combat queued. I play Form of Mist at superior, what happens if Psyche! is played?
+> A: The action does not continue. A new combat starts.
+> Q: What if my vampire was blocked, a Psyche! was played. Could I play Form of Mist at superior to continue the action at some point?
+> A: Yes, but only in the final combat (if all conditions are met).
+>
+> [Flow chart image, `flow chart action 2026.png`, described:] columns "As the action is announced" → "Block attempts" → "Resolution" → "After resolution". Successful: "Apply the effects" → "Queued combat"; blocked: "Block resolution (block / combat)" → "Queued combat". "After resolution" "includes" boxes "After combat" and "After block resolution". Loop 1 on each "Queued combat" box; loops 2 from "After combat" and from "After block resolution" back to "Queued combat"; "continue the action" from "After block resolution" back to "Block attempts". Legend: "Queued combat — Optional, no more than 1 combat can be queued at any given time"; "1: Psyche!, Coordinated Attacks…"; "2: Hidden Lurker, Fast Reaction…".
+>
+> [ANK 20250710] "No, this applies to "usable after block resolution" cards. Such cards have to wait until all chained combats are over. Obedience is "usable if this vampire is about to enter combat" and doesn't fall in the same category. It is playable when a certain criteria is met, rather than a window."
+>
+> [ANK 20250716] "If there's no block, you cannot play cards "usable after block resolution" at all." […] [a wording for cards played after the whole queue of combats] "It exists, and is called "after (action) resolution"."
