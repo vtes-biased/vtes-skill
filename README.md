@@ -1,5 +1,11 @@
 # vtes-skill
 
+> **Retired.** Superseded by [primogen](https://github.com/lionel-panhaleux/primogen), a VTES
+> MCP server for any LLM assistant. The knowledge, its sync and the calibration corpus moved
+> there on 2026-11-11 (its `docs/provenance.md` says what moved and what stayed here). This
+> repository is no longer updated; the `usenet-archives` release stays as the master copy of
+> the mailboxes.
+
 A self-contained agent skill making an AI assistant expert at **VTES**
 (Vampire: The Eternal Struggle): judge-level on rules, calibrated-analyst-level on deck
 analysis and strategy.

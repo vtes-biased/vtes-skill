@@ -1,5 +1,9 @@
 # CLAUDE.md
 
+**Retired on 2026-11-11.** Superseded by primogen (`lionel-panhaleux/primogen`), where the
+knowledge, its sync and the calibration corpus now live. Do not sync, calibrate or extend this
+repository; work there. What follows describes it as it was.
+
 This repo is the **source of truth for the `/vtes` agent skill** — a self-contained VTES
 (Vampire: The Eternal Struggle) expert skill. It is installed by symlinking the repo into
 `~/.claude/skills/vtes`, so editing here edits the live skill. The goal: make an agent as
